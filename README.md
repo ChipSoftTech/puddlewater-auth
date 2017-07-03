@@ -32,10 +32,11 @@ npm run startnodemon
 ### usage
 
 ```
-Setup admin: navigate to GET `localhost:3000/api/setup`
-  user `admin:password` is created
+Setup admin: user `admin:password` is created 
+GET `localhost:3000/api/setup`
 
-  Get token: navigate to POST `localhost:3000/api/auth`
+Get token
+POST `localhost:3000/api/auth`
   with raw application/javascript
   with body 
   {
@@ -43,7 +44,8 @@ Setup admin: navigate to GET `localhost:3000/api/setup`
  	"password":"password"
   }
  
-  Get users: naviage to GET `localhost:3000/api/users`
+Get users
+GET `localhost:3000/api/users`
   with header - authorization: <token from api/auth>
 
 ``` 
