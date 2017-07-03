@@ -1,0 +1,25 @@
+{
+  "name": "puddlewater-auth",
+  "version": "1.0.0",
+  "description": "PuddleWater micro project for Token Service Provider (TSP).  A REST api with Authentication returning a token.",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro index.js -p 3000",
+    "startdev": "set NODE_ENV=dev&&set MONGODB=mongodb://localhost/micro&&set SECRET=letmein&&micro index.js -p 3000 --inspect",
+    "startnodemon": "nodemon --exec \"npm run startdev\" -e \"js\"",    
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Carter",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "eslint": "^3.14.1",
+    "jsonwebtoken": "^7.2.1",
+    "micro": "^6.0.2",
+    "mongoose": "^4.7.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "eslint-plugin-prettier": "^2.0.0"
+  }
+}
