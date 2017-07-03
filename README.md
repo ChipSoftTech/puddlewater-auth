@@ -11,7 +11,7 @@ Tokenization reduces the value of stored credentials by removing consumers’ pr
 * bcrypt
 * mongodb
 
-### usage
+### run
 
 ```
 MONGODB=<url> SECRET=<secret> npm start
@@ -27,20 +27,24 @@ Run with nodemon
 npm run startnodemon
 ```
 
-* Setup admin: navigate to GET `localhost:3000/api/setup`
-* user `admin:password` is created
-*
-* Get token: navigate to POST `localhost:3000/api/auth`
-* with raw application/javascript
-* with body 
-* {
-*	"username":"admin",
-*	"password":"password"
-* }
-*
-* Get users: naviage to GET `localhost:3000/api/users`
-* with header - authorization: <token from api/auth>
-*
+### usage
+
+```
+Setup admin: navigate to GET `localhost:3000/api/setup`
+  user `admin:password` is created
+
+  Get token: navigate to POST `localhost:3000/api/auth`
+  with raw application/javascript
+  with body 
+  {
+ 	"username":"admin",
+ 	"password":"password"
+  }
+ 
+  Get users: naviage to GET `localhost:3000/api/users`
+  with header - authorization: <token from api/auth>
+
+``` 
 
 ```
 Using Visual Studio, setup .vscode/launch.json
