@@ -12,18 +12,20 @@ Tokenization reduces the value of stored credentials by removing consumers’ pr
 * mongodb
 
 ### run
+```
+Install once: npm install
+```
+
 
 ```
 MONGODB=<url> SECRET=<secret> npm start
 ```
 
 ```
-Install once: npm install
-
-Run:
 npm run startdev
+```
 
-Run with nodemon
+```
 npm run startnodemon
 ```
 
