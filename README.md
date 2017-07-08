@@ -18,7 +18,7 @@ Install once: npm install
 
 
 ```
-MONGODB=<url> SECRET=<secret> npm start
+MONGODB=<url> SECRET=<secret> npm run start
 ```
 
 ```
