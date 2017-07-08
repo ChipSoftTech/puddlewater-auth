@@ -33,6 +33,17 @@ module.exports = async function(req, res) {
           send(res, 200, await users.list());
         }
         break;
+      case '/api/v1.0/users':
+        if(auth.decode(req, res) !== null) {
+          if(req.method == 'POST') {
+            send(res, 200, await users.create(req, res));
+          } else {
+            const err = new Error('invalid request')
+            err.statusCode = 400
+            throw err
+          }
+        }
+        break;
       default:
         break;
     }
