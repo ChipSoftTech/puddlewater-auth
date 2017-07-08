@@ -21,11 +21,9 @@ module.exports.setup = async () => {
 
 module.exports.create = async (req, res)  => {
   const data = await json(req)
-  console.log(data)
+  console.log(data) 
   
   let user = new User({ username: data.email, role: 'admin', password: hashSync(data.password, 2) });
   return await user.save();
 };
-
-
 
